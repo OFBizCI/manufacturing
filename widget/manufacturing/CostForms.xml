@@ -25,12 +25,8 @@ under the License.
         <field name="costComponentCalcId" widget-style="buttontext">
             <hyperlink target="EditCostCalcs?costComponentCalcId=${costComponentCalcId}" description="${costComponentCalcId}" also-hidden="false"/>
         </field>
-        <field name="costGlAccountTypeId">
-            <display-entity entity-name="GlAccountType" key-field-name="glAccountTypeId"/>
-        </field>
-        <field name="offsettingGlAccountTypeId">
-            <display-entity entity-name="GlAccountType" key-field-name="glAccountTypeId"/>
-        </field>
+        <field name="costGlAccountTypeId"><hidden/></field>
+        <field name="offsettingGlAccountTypeId"><hidden/></field>
         <field name="currencyUomId" title="${uiLabelMap.CommonCurrency}">
             <display-entity entity-name="Uom" key-field-name="uomId"/>
         </field>
@@ -45,16 +41,8 @@ under the License.
         <alt-target use-when="costComponentCalc==null" target="createCostComponentCalc"/>
         <auto-fields-entity entity-name="CostComponentCalc" default-field-type="edit"/>
         <field name="costComponentCalcId"><display/></field>
-        <field name="costGlAccountTypeId">
-            <drop-down allow-empty="false">
-                <entity-options entity-name="GlAccountType" key-field-name="glAccountTypeId" description="${description}"/>
-            </drop-down>
-        </field>
-        <field name="offsettingGlAccountTypeId">
-            <drop-down allow-empty="true">
-                <entity-options entity-name="GlAccountType" key-field-name="glAccountTypeId" description="${description}"/>
-            </drop-down>
-        </field>
+        <field name="costGlAccountTypeId"><hidden/></field>
+        <field name="offsettingGlAccountTypeId"><hidden/></field>
         <field name="currencyUomId" title="${uiLabelMap.CommonCurrency}">
             <drop-down allow-empty="false" no-current-selected-key="${defaultCurrencyUomId}">
                 <entity-options key-field-name="uomId" description="${abbreviation} - ${description}" entity-name="Uom">
