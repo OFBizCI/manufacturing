@@ -25,11 +25,7 @@ under the License.
     <SecurityPermission description="Update operations in the Manufacturing Manager." permissionId="MANUFACTURING_UPDATE"/>
     <SecurityPermission description="Delete operations in the Manufacturing Manager." permissionId="MANUFACTURING_DELETE"/>
     <SecurityPermission description="ALL operations in the Manufacturing Manager." permissionId="MANUFACTURING_ADMIN"/>
-    <SecurityGroupPermission groupId="FULLADMIN" permissionId="MANUFACTURING_ADMIN"/>
-    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="MANUFACTURING_CREATE"/>
-    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="MANUFACTURING_DELETE"/>
-    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="MANUFACTURING_UPDATE"/>
-    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="MANUFACTURING_VIEW"/>
-    <SecurityGroupPermission groupId="VIEWADMIN" permissionId="MANUFACTURING_VIEW"/>
-    <SecurityGroupPermission groupId="BIZADMIN" permissionId="MANUFACTURING_ADMIN"/>
+    
+        <!-- add admin to SUPER permission group -->
+    <SecurityGroupPermission groupId="SUPER" permissionId="MANUFACTURING_ADMIN"/>
 </entity-engine-xml>
