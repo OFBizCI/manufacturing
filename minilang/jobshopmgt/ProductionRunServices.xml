@@ -47,7 +47,7 @@ under the License.
         <field-to-result field="parameters.productionRunId" result-name="productionRunId" />
         <field-to-result field="parameters.fromDate" result-name="fromDate" />
         <call-simple-method method-name="assignPartyToWorkEffort"
-            xml-resource="component://workeffort/script/org/ofbiz/workeffort/workeffort/WorkEffortSimpleServices.xml" />
+            xml-resource="component://workeffort/minilang/workeffort/WorkEffortSimpleServices.xml" />
         
     </simple-method>
     <simple-method method-name="createProductionRunAssoc" short-description="Associate the production run to another production run">
