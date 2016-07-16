@@ -17,7 +17,7 @@
  * under the License.
  *******************************************************************************/
 
-package org.ofbiz.manufacturing.bom;
+package org.apache.ofbiz.manufacturing.bom;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
@@ -27,19 +27,19 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-import org.ofbiz.base.util.Debug;
-import org.ofbiz.base.util.UtilDateTime;
-import org.ofbiz.base.util.UtilGenerics;
-import org.ofbiz.base.util.UtilMisc;
-import org.ofbiz.base.util.UtilValidate;
-import org.ofbiz.entity.Delegator;
-import org.ofbiz.entity.GenericEntityException;
-import org.ofbiz.entity.GenericValue;
-import org.ofbiz.entity.util.EntityQuery;
-import org.ofbiz.entity.util.EntityUtil;
-import org.ofbiz.manufacturing.mrp.ProposedOrder;
-import org.ofbiz.service.GenericServiceException;
-import org.ofbiz.service.LocalDispatcher;
+import org.apache.ofbiz.base.util.Debug;
+import org.apache.ofbiz.base.util.UtilDateTime;
+import org.apache.ofbiz.base.util.UtilGenerics;
+import org.apache.ofbiz.base.util.UtilMisc;
+import org.apache.ofbiz.base.util.UtilValidate;
+import org.apache.ofbiz.entity.Delegator;
+import org.apache.ofbiz.entity.GenericEntityException;
+import org.apache.ofbiz.entity.GenericValue;
+import org.apache.ofbiz.entity.util.EntityQuery;
+import org.apache.ofbiz.entity.util.EntityUtil;
+import org.apache.ofbiz.manufacturing.mrp.ProposedOrder;
+import org.apache.ofbiz.service.GenericServiceException;
+import org.apache.ofbiz.service.LocalDispatcher;
 
 /** An ItemCoinfigurationNode represents a component in a bill of materials.
  */
@@ -776,7 +776,7 @@ public class BOMNode {
      * @return Value of property ruleApplied.
      *
      */
-    public org.ofbiz.entity.GenericValue getRuleApplied() {
+    public org.apache.ofbiz.entity.GenericValue getRuleApplied() {
         return ruleApplied;
     }
 
@@ -784,7 +784,7 @@ public class BOMNode {
      * @param ruleApplied New value of property ruleApplied.
      *
      */
-    public void setRuleApplied(org.ofbiz.entity.GenericValue ruleApplied) {
+    public void setRuleApplied(org.apache.ofbiz.entity.GenericValue ruleApplied) {
         this.ruleApplied = ruleApplied;
     }
 
@@ -826,7 +826,7 @@ public class BOMNode {
      * @return Value of property productAssoc.
      *
      */
-    public org.ofbiz.entity.GenericValue getProductAssoc() {
+    public org.apache.ofbiz.entity.GenericValue getProductAssoc() {
         return productAssoc;
     }
 
@@ -834,7 +834,7 @@ public class BOMNode {
      * @param productAssoc New value of property productAssoc.
      *
      */
-    public void setProductAssoc(org.ofbiz.entity.GenericValue productAssoc) {
+    public void setProductAssoc(org.apache.ofbiz.entity.GenericValue productAssoc) {
         this.productAssoc = productAssoc;
     }
 
